@@ -1,0 +1,180 @@
+:root {
+  --primary: #2563eb;
+  --primary-dark: #1e40af;
+  --accent: #f59e42;
+  --bg-light: #f4f6fb;
+  --bg-section: #e8eaf6;
+  --text-main: #1a202c;
+  --text-muted: #64748b;
+  --card-bg: #fff;
+  --card-shadow: 0 4px 24px rgba(37, 99, 235, 0.08);
+  --border-radius: 1.25rem;
+}
+
+body {
+  background: var(--bg-light);
+  color: var(--text-main);
+}
+
+.navbar {
+  background: var(--card-bg) !important;
+  box-shadow: 0 2px 12px rgba(37, 99, 235, 0.06);
+  padding: 0.75rem 0;
+}
+.navbar .nav-link {
+  color: var(--primary-dark) !important;
+  font-weight: 500;
+  margin: 0 0.5rem;
+  transition: color 0.2s;
+}
+.navbar .nav-link.active, .navbar .nav-link:hover {
+  color: var(--primary) !important;
+  border-bottom: 2px solid var(--accent);
+  background: rgba(37, 99, 235, 0.04);
+  border-radius: 0.5rem;
+}
+
+.hero-section {
+  background: linear-gradient(120deg, #e8eaf6 0%, #f4f6fb 100%);
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hero-section h1 {
+  font-family: 'Sacramento', cursive;
+  font-size: 3.5rem;
+  color: var(--primary-dark);
+}
+.hero-section .tagline {
+  font-size: 1.5rem;
+  color: var(--accent);
+  font-family: 'Montserrat', sans-serif;
+}
+
+.about-section {
+  background: var(--bg-section);
+  border-radius: var(--border-radius);
+  box-shadow: var(--card-shadow);
+  margin-top: -3rem;
+  margin-bottom: 2rem;
+  padding: 2.5rem 1rem;
+}
+.profile-pic {
+  border: 6px solid var(--primary);
+  box-shadow: 0 4px 24px rgba(37, 99, 235, 0.12);
+}
+
+.skills-section {
+  background: var(--card-bg);
+  border-radius: var(--border-radius);
+  box-shadow: var(--card-shadow);
+  padding: 2.5rem 1rem;
+}
+.skill-row {
+  background: var(--bg-section);
+  border-radius: var(--border-radius);
+  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.06);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.skill-row:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 8px 32px rgba(37, 99, 235, 0.12);
+}
+
+.projects-section {
+  background: linear-gradient(120deg, #f4f6fb 0%, #e8eaf6 100%);
+  border-radius: var(--border-radius);
+  box-shadow: var(--card-shadow);
+  padding: 2.5rem 1rem;
+}
+.card {
+  border: none;
+  border-radius: var(--border-radius) !important;
+  box-shadow: var(--card-shadow);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 12px 36px rgba(37, 99, 235, 0.16);
+}
+
+.education-section {
+  background: var(--bg-section);
+  border-radius: var(--border-radius);
+  box-shadow: var(--card-shadow);
+  padding: 2.5rem 1rem;
+}
+
+.contact-section {
+  background: var(--card-bg);
+  border-radius: var(--border-radius);
+  box-shadow: var(--card-shadow);
+  padding: 2.5rem 1rem;
+}
+.btn-primary {
+  background: var(--primary);
+  border: none;
+  border-radius: 2rem;
+  font-weight: 600;
+  padding: 0.75rem 2rem;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.10);
+  letter-spacing: 0.5px;
+}
+.btn-primary:hover, .btn-primary:focus {
+  background: var(--primary-dark);
+  box-shadow: 0 6px 24px rgba(37, 99, 235, 0.18);
+}
+
+.footer-section {
+  background: var(--primary-dark) !important;
+  color: #fff;
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+  box-shadow: 0 -2px 12px rgba(37, 99, 235, 0.08);
+}
+.footer-link svg {
+  fill: #fff;
+  opacity: 0.8;
+  transition: opacity 0.2s, transform 0.2s;
+}
+.footer-link:hover svg {
+  opacity: 1;
+  transform: scale(1.15);
+}
+.copyright {
+  color: #e8eaf6;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+@media (max-width: 992px) {
+  .hero-section h1 {
+    font-size: 2.2rem;
+  }
+  .about-section, .skills-section, .projects-section, .education-section, .contact-section {
+    padding: 1.2rem 0.5rem;
+  }
+  .card {
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar .container-fluid {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  .hero-section {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .about-section, .skills-section, .projects-section, .education-section, .contact-section {
+    padding: 0.7rem 0.2rem;
+  }
+  .profile-pic {
+    width: 120px !important;
+    height: 120px !important;
+  }
+} 
