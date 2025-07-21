@@ -75,7 +75,7 @@ const Projects = () => {
       </div>
 
       {/* Inline styles for horizontal scroll */}
-      <style jsx>{`
+      <style>{`
         .project-scroll-wrapper {
           display: flex;
           gap: 2rem;
