@@ -161,7 +161,7 @@ const Education = () => {
         </div>
       </div>
       
-      <style jsx>{`
+      <style>{`
         .timeline-indicator {
           position: absolute;
           left: -15px;

@@ -132,7 +132,7 @@ const Footer = () => {
         <div className="bg-element bg-element-3"></div>
       </div>
       
-      <style jsx>{`
+      <style>{`
         .footer-brand {
           margin-bottom: 1.5rem;
         }

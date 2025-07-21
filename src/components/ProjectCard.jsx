@@ -78,7 +78,7 @@ const ProjectCard = ({ img, title, desc, tech, code, demo, featured = false }) =
         </div>
       </div>
       
-      <style jsx>{`
+      <style>{`
         .project-image-container {
           position: relative;
           overflow: hidden;

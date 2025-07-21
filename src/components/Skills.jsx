@@ -164,7 +164,7 @@ const Skills = () => {
         </div>
       </div>
       
-      <style jsx>{`
+      <style>{`
         .skill-progress-track {
           width: 100%;
           height: 4px;
