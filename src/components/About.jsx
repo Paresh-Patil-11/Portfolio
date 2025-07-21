@@ -5,7 +5,7 @@ const About = () => (
     <div className="container text-center">
       <img
         className="profile-pic mb-4"
-        src="public/images/photo.png"
+        src="/images/photo.png"
         alt="profile-pic"
         width="200"
         style={{ borderRadius: '50%' }}

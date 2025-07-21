@@ -108,7 +108,7 @@ const Intro = () => {
             >
               <div className="position-relative d-inline-block">
                 <img
-                  src="public/images/photo.png"
+                  src="/images/photo.png"
                   alt="Paresh Patil"
                   className="intro-image img-fluid"
                   style={{ width: "330px", height: "340px" }} // Adjust size here
