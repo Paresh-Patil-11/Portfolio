@@ -14,7 +14,7 @@ const projects = [
   {
     title: 'Zerodha Clone Platform',
     desc: 'A sophisticated trading platform clone with real-time market data, interactive charts, and responsive design. Built with modern React patterns and Material-UI.',
-    img: '/src/assets/Zerodha.jpg',
+    img: '/assets/Zerodha.jpg',
     tech: ['React.js', 'Material-UI', 'Vercel'],
     code: 'https://github.com/Paresh-Patil-11/ZerodhaClone',
     demo: 'https://zerodha-clone-rose.vercel.app/',
