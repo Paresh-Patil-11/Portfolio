@@ -1,20 +1,23 @@
 import React, { useEffect, useRef } from 'react';
 import ProjectCard from './ProjectCard';
-
+import DocSewaImg from './assets/DocSewa.jpg';
+import ZerodhaImg from './assets/Zerodha.jpg';
+import gemini from './assets/google-gemini.webp';
+=
 const projects = [
   {
     title: 'DocSahayak Application',
     desc: 'A comprehensive full-stack document management solution built with React and Express. Features are secure authentication, real-time updates.',
-    img: '/src/assets/DocSewa.jpg',
+    img: DocSewaImg,
     tech: ['React', 'Express', 'PostgreSQL'],
     code: 'https://github.com/Paresh-Patil-11/DocSahayak',
-    demo: 'https://github.com/Paresh-Patil-11/DocSahayak',
+    demo: 'https://doc-sahayak-enduser.vercel.app/',
     featured: true
   },
   {
     title: 'Zerodha Clone Platform',
     desc: 'A sophisticated trading platform clone with real-time market data, interactive charts, and responsive design. Built with modern React patterns and Material-UI.',
-    img: '/src/assets/Zerodha.jpg',
+    img: ZerodhaImg,
     tech: ['React.js', 'Material-UI', 'Vercel'],
     code: 'https://github.com/Paresh-Patil-11/ZerodhaClone',
     demo: 'https://zerodha-clone-rose.vercel.app/',
@@ -23,7 +26,7 @@ const projects = [
   {
     title: 'Talkconnect Application',
     desc: 'An intelligent chat interface powered by Google\'s Gemini AI. Features real-time conversations, context awareness, and beautiful UI with smooth animations.',
-    img: '/src/assets/google-gemini.webp',
+    img: gemini,
     tech: ['React.js', 'Gemini AI'],
     code: 'https://github.com/Paresh-Patil-11/TalkConnect',
     demo: 'https://talk-connect.vercel.app/',
