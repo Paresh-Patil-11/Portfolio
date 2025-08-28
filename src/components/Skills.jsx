@@ -168,14 +168,14 @@ const Skills = () => {
         .skill-progress-track {
           width: 100%;
           height: 4px;
-          background: rgba(0, 0, 0, 0.1);
+          background: rgba(255, 255, 255, 0.1);
           border-radius: 2px;
           overflow: hidden;
         }
         
         .skill-level-text {
           font-size: 0.8rem;
-          color: var(--text-muted);
+          color: var(--text-secondary);
           font-weight: 500;
         }
         

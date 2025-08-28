@@ -208,11 +208,11 @@ const Contact = () => {
       
       <style>{`
         .contact-form-wrapper {
-          background: rgba(255, 255, 255, 0.1);
+          background: rgba(255, 255, 255, 0.05);
           backdrop-filter: blur(20px);
           border-radius: var(--border-radius-2xl);
           padding: 2rem;
-          border: 1px solid rgba(255, 255, 255, 0.2);
+          border: 1px solid rgba(255, 255, 255, 0.1);
         }
         
         .form-group {
@@ -222,7 +222,7 @@ const Contact = () => {
         .form-label {
           display: block;
           font-weight: 600;
-          color: white;
+          color: var(--text-primary);
           margin-bottom: 0.5rem;
           font-size: 0.9rem;
         }
@@ -230,31 +230,31 @@ const Contact = () => {
         .form-control {
           width: 100%;
           padding: 0.75rem 1rem;
-          border: 2px solid rgba(255, 255, 255, 0.2);
+          border: 2px solid rgba(255, 255, 255, 0.1);
           border-radius: var(--border-radius-lg);
-          background: rgba(255, 255, 255, 0.1);
-          color: white;
+          background: rgba(255, 255, 255, 0.05);
+          color: var(--text-primary);
           font-size: 1rem;
           transition: all var(--transition-normal);
           backdrop-filter: blur(10px);
         }
         
         .form-control::placeholder {
-          color: rgba(255, 255, 255, 0.6);
+          color: var(--text-muted);
         }
         
         .form-control:focus {
           outline: none;
-          border-color: var(--accent);
-          box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.2);
-          background: rgba(255, 255, 255, 0.15);
+          border-color: var(--primary);
+          box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+          background: rgba(255, 255, 255, 0.1);
         }
         
         .contact-form-btn {
           display: flex;
           align-items: center;
           gap: 0.5rem;
-          background: linear-gradient(135deg, var(--accent), #f97316);
+          background: var(--gradient-primary);
           color: white;
           border: none;
           padding: 0.875rem 2rem;
@@ -269,7 +269,7 @@ const Contact = () => {
         
         .contact-form-btn:hover {
           transform: translateY(-2px);
-          box-shadow: 0 10px 30px rgba(245, 158, 11, 0.3);
+          box-shadow: 0 10px 30px rgba(59, 130, 246, 0.3);
         }
         
         .contact-info-item {
@@ -278,10 +278,10 @@ const Contact = () => {
           gap: 1rem;
           margin-bottom: 2rem;
           padding: 1rem;
-          background: rgba(255, 255, 255, 0.1);
+          background: rgba(255, 255, 255, 0.05);
           border-radius: var(--border-radius-lg);
           backdrop-filter: blur(10px);
-          border: 1px solid rgba(255, 255, 255, 0.2);
+          border: 1px solid rgba(255, 255, 255, 0.1);
         }
         
         .contact-icon {
@@ -290,21 +290,21 @@ const Contact = () => {
           justify-content: center;
           width: 50px;
           height: 50px;
-          background: rgba(255, 255, 255, 0.2);
+          background: rgba(59, 130, 246, 0.2);
           border-radius: 50%;
-          color: white;
+          color: var(--primary);
           flex-shrink: 0;
         }
         
         .contact-details h4 {
-          color: white;
+          color: var(--text-primary);
           font-size: 1.1rem;
           font-weight: 600;
           margin: 0 0 0.25rem 0;
         }
         
         .contact-details p {
-          color: rgba(255, 255, 255, 0.8);
+          color: var(--text-secondary);
           margin: 0;
           font-size: 0.95rem;
         }
@@ -314,7 +314,7 @@ const Contact = () => {
         }
         
         .quick-actions-title {
-          color: white;
+          color: var(--text-primary);
           font-size: 1.2rem;
           font-weight: 600;
           margin-bottom: 1rem;
@@ -331,23 +331,23 @@ const Contact = () => {
           align-items: center;
           gap: 0.5rem;
           padding: 0.75rem 1rem;
-          background: rgba(255, 255, 255, 0.1);
-          color: white;
+          background: rgba(255, 255, 255, 0.05);
+          color: var(--text-primary);
           text-decoration: none;
           border-radius: var(--border-radius-lg);
           font-weight: 500;
           font-size: 0.9rem;
           transition: all var(--transition-normal);
           backdrop-filter: blur(10px);
-          border: 1px solid rgba(255, 255, 255, 0.2);
+          border: 1px solid rgba(255, 255, 255, 0.1);
           justify-content: center;
         }
         
         .quick-action-btn:hover {
-          background: rgba(255, 255, 255, 0.2);
+          background: var(--primary);
           transform: translateY(-2px);
           color: white;
-          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 15px rgba(59, 130, 246, 0.3);
         }
         
         @media (max-width: 768px) {

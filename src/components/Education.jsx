@@ -216,7 +216,7 @@ const Education = () => {
           display: flex;
           align-items: center;
           font-size: 0.9rem;
-          color: var(--text-secondary);
+          color: var(--text-muted);
           margin-bottom: 0.5rem;
         }
         
@@ -258,15 +258,15 @@ const Education = () => {
           align-items: center;
           gap: 1rem;
           padding: 1rem;
-          background: rgba(255, 255, 255, 0.5);
+          background: var(--bg-card);
           border-radius: var(--border-radius-lg);
-          border: 1px solid rgba(255, 255, 255, 0.2);
+          border: 1px solid rgba(255, 255, 255, 0.1);
           transition: all var(--transition-normal);
         }
         
         .certification-item:hover {
           transform: translateY(-2px);
-          box-shadow: var(--shadow-lg);
+          box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
         }
         
         .cert-icon {
@@ -275,7 +275,7 @@ const Education = () => {
           justify-content: center;
           width: 40px;
           height: 40px;
-          background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+          background: var(--gradient-primary);
           border-radius: 50%;
           color: white;
           flex-shrink: 0;
@@ -290,7 +290,7 @@ const Education = () => {
         
         .cert-provider {
           font-size: 0.8rem;
-          color: var(--text-muted);
+          color: var(--text-secondary);
           margin: 0;
         }
         

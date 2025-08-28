@@ -29,7 +29,7 @@ function App() {
     // Simulate loading time
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 2000);
+    }, 1500);
 
     return () => clearTimeout(timer);
   }, []);
@@ -42,61 +42,6 @@ function App() {
         <h2 className="loading-text">Paresh Patil</h2>
         <p className="loading-subtitle">Full-Stack Developer</p>
       </div>
-      
-      <style>{`
-        .loading-overlay {
-          position: fixed;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          z-index: 9999;
-          transition: opacity 0.5s ease-out;
-        }
-        
-        .loading-overlay.fade-out {
-          opacity: 0;
-          pointer-events: none;
-        }
-        
-        .loading-content {
-          text-align: center;
-          color: white;
-        }
-        
-        .loading-spinner {
-          width: 60px;
-          height: 60px;
-          border: 3px solid rgba(255, 255, 255, 0.3);
-          border-top: 3px solid white;
-          border-radius: 50%;
-          animation: spin 1s linear infinite;
-          margin: 0 auto 2rem;
-        }
-        
-        .loading-text {
-          font-family: var(--font-heading);
-          font-size: 2rem;
-          font-weight: 700;
-          margin-bottom: 0.5rem;
-          animation: fadeInUp 1s ease-out 0.5s both;
-        }
-        
-        .loading-subtitle {
-          font-size: 1.1rem;
-          opacity: 0.9;
-          animation: fadeInUp 1s ease-out 0.7s both;
-        }
-        
-        @keyframes spin {
-          0% { transform: rotate(0deg); }
-          100% { transform: rotate(360deg); }
-        }
-      `}</style>
     </div>
   );
 
@@ -120,6 +65,11 @@ function App() {
       <ScrollToTopButton />
       
       <style>{`
+        .loading-overlay.fade-out {
+          opacity: 0;
+          pointer-events: none;
+        }
+        
         .main-content {
           transition: opacity 0.5s ease-out;
         }

@@ -73,7 +73,7 @@ const Footer = () => {
           font-family: var(--font-heading);
           font-size: 1.5rem;
           font-weight: 700;
-          background: linear-gradient(135deg, var(--primary-light), white);
+          background: var(--gradient-primary);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
           background-clip: text;
@@ -81,7 +81,7 @@ const Footer = () => {
         }
         
         .brand-description {
-          color: rgba(255, 255, 255, 0.8);
+          color: var(--text-secondary);
           line-height: 1.6;
           font-size: 0.9rem;
         }
@@ -91,7 +91,7 @@ const Footer = () => {
         }
         
         .footer-section-title {
-          color: white;
+          color: var(--text-primary);
           font-size: 1rem;
           font-weight: 600;
           margin-bottom: 0.75rem;
@@ -105,7 +105,7 @@ const Footer = () => {
           left: 0;
           width: 25px;
           height: 2px;
-          background: var(--primary-light);
+          background: var(--primary);
         }
         
         .footer-contact {
@@ -118,18 +118,18 @@ const Footer = () => {
           display: flex;
           align-items: center;
           gap: 0.5rem;
-          color: rgba(255, 255, 255, 0.8);
+          color: var(--text-secondary);
           font-size: 0.85rem;
         }
         
         .contact-item svg {
-          color: var(--primary-light);
+          color: var(--primary);
           flex-shrink: 0;
         }
         
         .footer-bottom {
           padding: 1rem 0;
-          border-top: 1px solid rgba(255, 255, 255, 0.1);
+          border-top: 1px solid rgba(255, 255, 255, 0.05);
         }
         
         .footer-bottom .row {
@@ -148,7 +148,7 @@ const Footer = () => {
         
         .copyright,
         .footer-tagline {
-          color: rgba(255, 255, 255, 0.6);
+          color: var(--text-muted);
           font-size: 0.8rem;
           margin: 0;
         }
@@ -170,7 +170,7 @@ const Footer = () => {
         .bg-element {
           position: absolute;
           border-radius: 50%;
-          background: rgba(255, 255, 255, 0.05);
+          background: rgba(59, 130, 246, 0.05);
           animation: float 6s ease-in-out infinite;
         }
         
