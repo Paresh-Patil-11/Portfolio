@@ -40,7 +40,7 @@ function App() {
       <div className="loading-content">
         <div className="loading-spinner"></div>
         <h2 className="loading-text">Paresh Patil</h2>
-        <p className="loading-subtitle">Full-Stack Developer</p>
+        <p className="loading-subtitle">A Software Developer</p>
       </div>
     </div>
   );
