@@ -1,8 +1,8 @@
 import React, { useEffect, useRef } from 'react';
 import ProjectCard from './ProjectCard';
-import DocSewaImg from './assets/DocSewa.jpg';
-import ZerodhaImg from './assets/Zerodha.jpg';
-import gemini from './assets/google-gemini.webp';
+import DocSewaImg  from '../assets/DocSewa.jpg';
+import ZerodhaImg  from '../assets/Zerodha.jpg';
+import gemini  from '../assets/google-gemini.webp';
 
 const projects = [
   {
