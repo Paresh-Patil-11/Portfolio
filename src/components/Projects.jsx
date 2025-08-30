@@ -3,7 +3,7 @@ import ProjectCard from './ProjectCard';
 import DocSewaImg from './assets/DocSewa.jpg';
 import ZerodhaImg from './assets/Zerodha.jpg';
 import gemini from './assets/google-gemini.webp';
-=
+
 const projects = [
   {
     title: 'DocSahayak Application',
