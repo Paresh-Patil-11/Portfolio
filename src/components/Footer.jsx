@@ -48,11 +48,7 @@ const Footer = () => {
                <b>© {currentYear} Paresh Patil. All rights reserved.</b>
               </p>
             </div>
-            <div className="col-md-6 text-md-end">
-              <p className="footer-tagline">
-                <b>Built with 🤍 using React</b>
-              </p>
-            </div>
+            
           </div>
         </div>
       </div>
